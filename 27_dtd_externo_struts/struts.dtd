@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT struts-config (form-beans, global-exceptions, global-forwards, action-mappings, controller, message-resources, plug-in+)>
+<!ELEMENT form-beans (#PCDATA)>
+<!ELEMENT global-exceptions (#PCDATA)>
+<!ELEMENT global-forwards (forward+)>
+<!ELEMENT forward EMPTY>
+	<!ATTLIST forward name CDATA #REQUIRED
+					  path CDATA #REQUIRED>
+<!ELEMENT action-mappings (action+)>
+<!ELEMENT action EMPTY>
+	<!ATTLIST action path CDATA #REQUIRED
+					 forward CDATA #REQUIRED>
+<!ELEMENT controller EMPTY>
+	<!ATTLIST controller processorClass CDATA #REQUIRED>
+<!ELEMENT message-resources EMPTY>
+	<!ATTLIST message-resources parameter CDATA #REQUIRED>
+<!ELEMENT plug-in (set-property+)>
+	<!ATTLIST plug-in className CDATA #REQUIRED>
+<!ELEMENT set-property EMPTY>
+	<!ATTLIST set-property property CDATA #REQUIRED
+					   value CDATA #REQUIRED>

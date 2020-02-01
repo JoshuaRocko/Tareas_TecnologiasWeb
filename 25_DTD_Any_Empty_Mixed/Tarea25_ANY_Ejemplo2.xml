@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE raiz [
+	<!ELEMENT raiz (a,b)*>
+	<!ELEMENT a ANY>
+	<!ELEMENT b ANY>
+]>
+
+<raiz>
+	<a></a>
+	<b>
+		Etiqueta b
+		<a> Etiqueta a</a>
+		<a>
+			<b><a></a></b>
+		</a>
+	</b>
+</raiz>

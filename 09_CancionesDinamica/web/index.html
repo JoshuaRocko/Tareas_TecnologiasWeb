@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Canciones Dinámica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ServletCancion" method="get">
+            <!--Canción: <input type="text" name="cancion"/>-->
+            Elige una canción: <input list="canciones" name="cancion" />
+            <datalist id="canciones">
+                <option value="1993">
+                <option value="Sin Rencor">
+                <option value="Como Un Sol">
+                <option value="Fugaz">
+                <option value="Peter Punk">
+            </datalist>
+            <input type="submit" value="Reproducir"/>
+        </form>
+    </body>
+</html>

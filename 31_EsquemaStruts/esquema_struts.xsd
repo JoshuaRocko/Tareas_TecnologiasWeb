@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="struts-config">
+		<xs:complexType>
+			<xs:sequence>
+                <xs:element name="form-beans" type="xs:string" />
+                <xs:element name="global-exceptions" type="xs:string"/>
+                <xs:element name="global-forwards">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="forward">
+                                <xs:complexType>
+                                    <xs:attribute name="name" type="xs:string" use="required"/>
+                                    <xs:attribute name="path" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element> 
+                <xs:element name="action-mappings">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="action">
+                                <xs:complexType>
+                                    <xs:attribute name="path" type="xs:string" use="required"/>
+                                    <xs:attribute name="forward" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="controller">
+                    <xs:complexType>
+                        <xs:attribute name="processorClass" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="message-resources">
+                    <xs:complexType>
+                        <xs:attribute name="parameter" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="plug-in" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="set-property" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="property" type="xs:string" use="required"/>
+                                    <xs:attribute name="value" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="className" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

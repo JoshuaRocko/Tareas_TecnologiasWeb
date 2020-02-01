@@ -1,0 +1,4 @@
+/* Expresiones Regulares en JavaScript */
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+https://www.arkaitzgarro.com/javascript/capitulo-11.html

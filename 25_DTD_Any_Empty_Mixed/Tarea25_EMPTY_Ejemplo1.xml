@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE raiz [
+	<!ELEMENT raiz (a|b|c)*>
+	<!ELEMENT a (#PCDATA)>
+	<!ELEMENT b EMPTY>
+	<!ELEMENT c (#PCDATA)>
+]>
+
+<raiz>
+	<a>Hola</a>
+	<b></b>
+	<c>Adios</c>
+	<b></b>
+	<a>FASD</a>
+	<b />
+</raiz>

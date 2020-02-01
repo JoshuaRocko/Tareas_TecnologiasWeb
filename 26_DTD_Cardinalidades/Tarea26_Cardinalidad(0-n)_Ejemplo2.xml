@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE raiz [
+	<!ELEMENT raiz (a,b)>
+	<!ELEMENT a (#PCDATA)>
+	<!ELEMENT b (c*,d*)*>
+	<!ELEMENT c (#PCDATA)>
+	<!ELEMENT d (#PCDATA)>
+]>
+
+<raiz>
+	<a>Etiqueta</a>
+	<b>
+		<d>Etiqueta d</d>
+		<d>Etiqueta d</d>
+		<c>Etiqueta c</c>
+		<d>Etiqueta d</d>
+		<c>Etiqueta c</c>
+		<c>Etiqueta c</c>
+		<c>Etiqueta c</c>
+	</b>
+</raiz>

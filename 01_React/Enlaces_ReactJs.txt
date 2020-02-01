@@ -1,0 +1,7 @@
+/* Cursos react */
+https://www.freecodecamp.org/learn/front-end-libraries/react/
+https://www.youtube.com/playlist?list=PLL0TiOXBeDai6x37_wQwWX6_qNZUM4FBm
+https://es.reactjs.org/docs/getting-started.html
+
+/*Curso Webpack/*
+https://www.youtube.com/playlist?list=PLL0TiOXBeDag4uKXT_m5t65AR_rD0VBhA
